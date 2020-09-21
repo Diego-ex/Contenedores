@@ -35,8 +35,12 @@ public class MainActivity extends AppCompatActivity {
         btn_RecylerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // se deben ingresar dos parametros, el activity actual y el activity que quiero mostrar
+                //Intent intento2 = new Intent(MainActivity.this, RecyclerActivity.class);
+                //startActivity(intento2);
 
-
+                //Otra manera para cambiar de actividad (Pantallas, Screen)
+                startActivity(new Intent(MainActivity.this,RecyclerActivity.class));
 
                 // toast de prueba Toast.makeText(MainActivity.this, "Recyler View", Toast.LENGTH_LONG).show();
             }
